@@ -70,7 +70,7 @@ function changerImage (){
 function dotclick (){
 	document.querySelectorAll(".dot").forEach(function(element){
 		element.addEventListener("click", () => {
-			currentIndex = element.getAttribute("number");
+			currentIndex = parseInt(element.getAttribute("number"));
 			changerImage();
 			mettreAJourDots()
 		})
